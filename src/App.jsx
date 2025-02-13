@@ -82,7 +82,14 @@ function App() {
 								<tr className="userRow" key={user._id}>
 									<td className="userCol">{user.name}</td>
 									<td className="userCol">{user.age}</td>
-									<td className="userCol">Удалить</td>
+									<td className="userCol">
+										<button
+											className="delButton"
+											onClick={() => console.log('click')}
+										>
+											Удалить
+										</button>
+									</td>
 								</tr>
 							);
 						})}
